@@ -13,7 +13,10 @@ docker exec -it redis redis-cli
 ```
 docker exec -it redis redis-cli -u redis://default:${REDIS_HOST}:${REDIS_PORT}
 ```
-
+```
+redis-12325.c10.us-east-1-2.ec2.cloud.redislabs.com:12325> type "sample_restaurant:10"
+redis-12325.c10.us-east-1-2.ec2.cloud.redislabs.com:12325> JSON.GET "sample_restaurant:10"
+```
 ## Connect and print the raw output
 ```
 docker exec -it redis redis-cli --raw
